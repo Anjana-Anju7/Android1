@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">bluetooth_communication</string>
+    <string name="incoming_messages">Incoming messages</string>
+</resources>

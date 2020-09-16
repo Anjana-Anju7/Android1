@@ -11,7 +11,6 @@ import android.os.Build;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
-
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -19,7 +18,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
-
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.UUID;
@@ -42,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     EditText etSend;
 
     private static final UUID MY_UUID_INSECURE =
-            UUID.fromString("8ce255c0-200a-11e0-ac64-0800200c9a66");
+            UUID.fromString("a8280ea0-f193-11ea-adc1-0242ac120002");
 
     BluetoothDevice mBTDevice;
 

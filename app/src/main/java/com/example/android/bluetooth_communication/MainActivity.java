@@ -132,10 +132,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
             if (action.equals(BluetoothDevice.ACTION_FOUND)){
                 BluetoothDevice device = intent.getParcelableExtra (BluetoothDevice.EXTRA_DEVICE);
+                if(device.getAddress().startsWith("44:46:87") || device.getAddress().startsWith("41:42:2D")) {
                 mBTDevices.add(device);
                 Log.d(TAG, "onReceive: " + device.getName() + ": " + device.getAddress());
                 mDeviceListAdapter = new DeviceListAdapter(context, R.layout.device_adapter_view, mBTDevices);
                 lvNewDevices.setAdapter(mDeviceListAdapter);
+                }
             }
         }
     };
